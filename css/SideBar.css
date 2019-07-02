@@ -1,0 +1,151 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.iicon {
+    font-size: 3em;
+    top: 20%;
+    left: 20%;
+    position: absolute;
+}
+
+.scene {
+    width: 200px;
+    height: 200px;
+    margin: 80px;
+    perspective: 200px;
+}
+
+
+.cube {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: translateZ(-300px) rotateY(0deg);
+    transition: transform 1s;
+}
+
+    .cube:hover {
+        transform: translateZ(-300px) rotateY(90deg);
+        transition: transform 1s;
+    }
+
+.cube2 {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: translateZ(-300px) rotateY(0deg);
+    transition: transform 1s;
+}
+
+    .cube2:hover {
+        transform: translateZ(-300px) rotateY(-90deg);
+        transition: transform 1s;
+    }
+
+.cube.show-front {
+    transform: translateZ(-100px) rotateY( 0deg);
+}
+
+.cube.show-right {
+    transform: translateZ(-100px) rotateY( -90deg);
+}
+
+.cube.show-back {
+    transform: translateZ(-100px) rotateY(-180deg);
+}
+
+.cube.show-left {
+    transform: translateZ(-100px) rotateY( 90deg);
+}
+
+.cube.show-top {
+    transform: translateZ(-100px) rotateX( -90deg);
+}
+
+.cube.show-bottom {
+    transform: translateZ(-100px) rotateX( 90deg);
+}
+.face0 {
+    background: #55b1d1;
+}
+.face1 {
+    background: #cdb95c;
+}
+.face2 {
+    background: #cd765c;
+}
+.face3 {
+    background: #5ccd99;
+}
+.face4 {
+    background: #55b1d1;
+}
+.face5 {
+    background: #cdb95c;
+}
+
+.cube__face {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #2b3033;
+    text-align: center;
+}
+
+.cube__face--front {
+    background: #2b3033;
+}
+
+
+
+.cube__face--back {
+    background: #212529;
+}
+
+
+.cube__face--top {
+    background: #212529;
+}
+
+.cube__face--bottom {
+    background: #212529;
+}
+
+.cube__face--front {
+    transform: rotateY( 0deg) translateZ(100px);
+}
+
+.cube__face--right {
+    transform: rotateY( 90deg) translateZ(100px);
+}
+
+.cube__face--back {
+    transform: rotateY(180deg) translateZ(100px);
+}
+
+.cube__face--left {
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+.cube__face--top {
+    transform: rotateX( 90deg) translateZ(100px);
+}
+
+.cube__face--bottom {
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
+label {
+    margin-right: 10px;
+}
+

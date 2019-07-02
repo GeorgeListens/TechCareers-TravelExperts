@@ -1,0 +1,10 @@
+﻿.containerBackground {
+    background-color: white;
+    opacity: 0.9;
+    width: 40%;
+    padding: 30px;
+    border-radius: 25px;
+    position:fixed;
+    left: 30%;
+    top: 10%;
+}
